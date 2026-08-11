@@ -1,0 +1,28 @@
+# 环境变量(含密钥/内网地址)
+.env
+.env.local
+.env.*.local
+
+# Memory & Trace & Eval 持久化产物
+memory.db
+memory_vectors.json
+traces/
+evals/report-*.jsonl
+
+# Issues-Agent 生成的报告
+reports/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

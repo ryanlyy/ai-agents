@@ -1,0 +1,19 @@
+openai>=1.54.0
+python-dotenv>=1.0.1
+tzdata>=2024.1; sys_platform == "win32"
+
+# Step 4: MCP server / client SDK
+mcp>=1.0.0
+
+# Step 5: Memory(向量存储用 numpy 自实现,仅嵌入走 httpx 调 Ollama)
+numpy>=1.26
+httpx>=0.27
+
+# Step 8: 可选 Langfuse(没设环境变量时不会被使用)
+langfuse>=2.0.0
+
+# Step 6: LangGraph(Plan-and-Execute 状态机)
+langgraph>=1.0.0
+
+# Step 9: Evals(YAML 用例)
+pyyaml>=6.0
