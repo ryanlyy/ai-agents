@@ -70,9 +70,7 @@ python main.py "现在北京时间几点?帮我算 sqrt(2)*100"
 `http_get` 工具需要出公网,如果你在企业网里,把代理写到 `.env`:
 
 ```
-HTTPS_PROXY=http://10.158.100.2:8080
-HTTP_PROXY=http://10.158.100.2:8080
-NO_PROXY=10.67.34.44,localhost,127.0.0.1,::1
+
 ```
 
 httpx 默认 `trust_env=True` 会自动 pick up,**无需改 Python 代码**。
